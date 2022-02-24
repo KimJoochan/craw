@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        const request = new XMLHttpRequest();
+        const url = 'http://naver.com'; // 긁어오고 싶은 주소를 넣는다. 예제는 네이버
+        request.open('GET', url, true);
+        request.onload = function() {
+            console.log(request.responseText); // 긁어온 내용 뿌리기
+        };
+        request.send();
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
